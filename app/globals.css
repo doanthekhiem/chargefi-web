@@ -3,8 +3,8 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --primary: #6CDDAF;
-  --primary-dark: #5BC89A;
+  --primary: #6cddaf;
+  --primary-dark: #5bc89a;
 }
 
 @theme inline {
@@ -38,7 +38,7 @@ body {
   background: var(--primary);
   color: #000;
   border: none;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
@@ -48,9 +48,33 @@ body {
   gap: 8px;
   text-decoration: none;
   white-space: nowrap;
+  height: 40px;
 }
 
 .btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-primary-inline {
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  border: 1px solid var(--primary);
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary-inline:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
 }
@@ -129,7 +153,7 @@ body {
   .container {
     padding: 0 16px;
   }
-  
+
   .btn-primary {
     padding: 10px 20px;
     font-size: 14px;
@@ -140,7 +164,7 @@ body {
   .container {
     padding: 0 12px;
   }
-  
+
   .btn-primary {
     padding: 8px 16px;
     font-size: 13px;
