@@ -7,7 +7,7 @@ import {
   HeroSection,
   HowItWorks,
   Partners,
-  Roadmap
+  Roadmap,
 } from "./components";
 
 export default function Home() {
