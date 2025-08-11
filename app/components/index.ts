@@ -9,3 +9,4 @@ export { default as Partners } from './Partners';
 export { default as FAQ } from './FAQ';
 export { default as CTA } from './CTA';
 export { default as Footer } from './Footer';
+export { default as Logo } from './Logo';

@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 export default function Footer() {
   const navigationLinks = [
     { href: "#how-it-works", label: "How it Works" },
@@ -58,12 +60,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           <div>
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center">
-                <svg width="12" height="12" className="sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
-                </svg>
-              </div>
-              <span className="text-lg sm:text-xl font-bold text-primary">ChargeFi</span>
+              <Logo width={100} height={26} />
             </div>
             <p className="text-gray-400 text-xs sm:text-sm">
               The future of energy rewards is here. Charge. Earn. Repeat.

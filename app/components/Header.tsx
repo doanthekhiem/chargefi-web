@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Logo from "./Logo";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,23 +27,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center">
-                <svg
-                  width="12"
-                  height="12"
-                  className="sm:w-4 sm:h-4"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <span className="text-lg sm:text-xl font-bold text-primary">
-                ChargeFi
-              </span>
+              <Logo width={120} height={32} />
             </div>
             <a
               href="#how-it-works"
