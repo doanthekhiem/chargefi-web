@@ -1,97 +1,30 @@
+import Image from "next/image";
+
 export default function Partners() {
   const benefits = [
     {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-primary"
-        >
-          <path
-            d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
-            fill="currentColor"
-          />
-        </svg>
-      ),
+      icon: <Image src="/want1.svg" alt="icon1" width={36} height={36} />,
       title: "API & SDK Integrations",
       description:
         "API & SDK integrations for EV chargers, smart plugs, or mobile devices",
     },
     {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-primary"
-        >
-          <path
-            d="M12 2L2 7L12 12L22 7L12 2Z"
-            stroke="currentColor"
-            strokeWidth="2"
-          />
-          <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" />
-          <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" />
-        </svg>
-      ),
+      icon: <Image src="/want2.svg" alt="icon2" width={36} height={36} />,
       title: "Blockchain Compatibility",
       description: "Blockchain & wallet compatibility (EVM, zk, L2)",
     },
     {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-primary"
-        >
-          <path
-            d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
-            fill="currentColor"
-          />
-          <path d="M3 3L21 21" stroke="currentColor" strokeWidth="2" />
-        </svg>
-      ),
+      icon: <Image src="/want3.svg" alt="icon3" width={36} height={36} />,
       title: "Carbon Footprint Tracking",
       description: "Carbon footprint tracking & energy data",
     },
     {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-primary"
-        >
-          <path
-            d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
-            fill="currentColor"
-          />
-        </svg>
-      ),
+      icon: <Image src="/want4.svg" alt="icon4" width={36} height={36} />,
       title: "Gamified Engagement",
       description: "Gamified user engagement and growth quests",
     },
     {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-primary"
-        >
-          <path
-            d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
-            fill="currentColor"
-          />
-        </svg>
-      ),
+      icon: <Image src="/want5.svg" alt="icon5" width={36} height={36} />,
       title: "Gamified Engagement",
       description: "Real-world energy → on-chain reward logic",
     },
@@ -115,18 +48,21 @@ export default function Partners() {
             </p>
             <div className="text-xs sm:text-sm text-white mb-4 sm:mb-6">
               Have a custom idea or pilot in mind? Email us at
-              <a href="mailto:partners@chargefi.io" className="text-primary hover:underline ml-1">
+              <a
+                href="mailto:partners@chargefi.io"
+                className="text-primary hover:underline ml-1"
+              >
                 partners@chargefi.io
               </a>
             </div>
           </div>
-          <div className="col-span-1 lg:col-span-2">
+          <div className="col-span-1">
             <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 lg:mb-8 leading-relaxed">
               Whether you&apos;re an EV charging provider, a Layer-2 blockchain,
               a green energy startup, or a Web3 community tool—ChargeFi is open
               for integration.
-              <br className="hidden sm:block" /> Together, we can unlock new user experiences, reward
-              systems, and sustainable adoption models.
+              <br className="hidden sm:block" /> Together, we can unlock new
+              user experiences, reward systems, and sustainable adoption models.
             </p>
             <button className="h-12 sm:h-14 flex items-center justify-between gap-2 w-full p-3 sm:p-4 bg-white text-black rounded-lg hover:bg-gray-100 transition-colors text-sm sm:text-base font-medium">
               BECOME A PARTNER
@@ -140,12 +76,12 @@ export default function Partners() {
               </svg>
             </button>
           </div>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-5 mt-6 sm:mt-8 lg:mt-10">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-[#0E0F0E] p-4 sm:p-6 lg:px-10 lg:py-8 rounded-lg">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/20 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+            <div
+              key={index}
+              className="bg-[#0E0F0E] p-4 sm:p-6 lg:px-10 lg:py-8 rounded-lg"
+            >
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
                 {benefit.icon}
               </div>
               <h3 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base lg:text-lg">
