@@ -7,8 +7,7 @@ import {
   HeroSection,
   HowItWorks,
   Partners,
-  Roadmap,
-  Tokenomics
+  Roadmap
 } from "./components";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <HeroSection />
       <HowItWorks />
       <Features />
-      <Tokenomics />
       <Roadmap />
       <Partners />
       <FAQ />
