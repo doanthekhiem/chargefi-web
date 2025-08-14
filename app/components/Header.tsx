@@ -69,7 +69,12 @@ export default function Header() {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-3 lg:gap-4">
-            <button className="btn-primary-inline text-xs lg:text-sm">
+            <a 
+              href="https://chargefi-1.gitbook.io/chargefi-docs/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary-inline text-xs lg:text-sm"
+            >
               <svg
                 width="14"
                 height="14"
@@ -84,7 +89,7 @@ export default function Header() {
                 />
               </svg>
               <span className="hidden sm:inline">Whitepaper</span>
-            </button>
+            </a>
             <button className="btn-primary h-10 text-xs lg:text-sm">
               <svg
                 width="14"
@@ -180,7 +185,12 @@ export default function Header() {
               </a>
             </nav>
             <div className="flex flex-col gap-3 mt-4">
-              <button className="btn-primary text-sm w-full justify-center">
+              <a 
+                href="https://chargefi-1.gitbook.io/chargefi-docs/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary text-sm w-full justify-center"
+              >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z"
@@ -189,7 +199,7 @@ export default function Header() {
                   />
                 </svg>
                 Whitepaper
-              </button>
+              </a>
               <button className="btn-primary text-sm w-full justify-center">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path

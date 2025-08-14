@@ -20,7 +20,12 @@ export default function CTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-          <button className="btn-primary-inline text-xs lg:text-sm">
+          <a 
+            href="https://chargefi-1.gitbook.io/chargefi-docs/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary-inline text-xs lg:text-sm"
+          >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path
                 d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z"
@@ -29,7 +34,7 @@ export default function CTA() {
               />
             </svg>
             Whitepaper
-          </button>
+          </a>
           <button className="btn-primary text-sm sm:text-base">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path

@@ -16,7 +16,7 @@ export default function Footer() {
     { name: "Roadmap", url: "#roadmap" },
     {
       name: "Whitepaper",
-      url: "https://etherspot-1.gitbook.io/etherspot-docs/",
+      url: "https://chargefi-1.gitbook.io/chargefi-docs/",
     },
   ];
 
