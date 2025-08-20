@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   const socialLinks = [
-    { name: "Twitter", icon: "twitter", url: "#" },
+    { name: "Twitter", icon: "twitter", url: "https://x.com/ChargeFi_Energy" },
     { name: "Telegram", icon: "telegram", url: "#" },
     { name: "Discord", icon: "discord", url: "#" },
     { name: "Medium", icon: "medium", url: "#" },
